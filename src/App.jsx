@@ -1,6 +1,11 @@
+import Clock from "./component/Clock";
 
 function App() {
-  return <div>Hellow world</div>
+  return (
+    <div>
+      <Clock local="bn-Bd" />
+    </div>
+  );
 }
 
-export default App
+export default App;
