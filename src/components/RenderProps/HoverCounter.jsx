@@ -1,7 +1,8 @@
-function HoverCounter({count, incrimentCount}){
+function HoverCounter({count, incrimentCount, theme}){
+    const style = theme === 'dark' ?  {backgroundColor: 'black', color: 'white'} : null;
     return (
         <div>
-            <h1 onMouseOver={incrimentCount}>Hover {count} times</h1>
+            <h1  onMouseOver={incrimentCount} style={style}>Hover {count} times</h1>
         </div>
     );
 }
