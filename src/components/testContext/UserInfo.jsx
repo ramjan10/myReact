@@ -2,9 +2,13 @@ import React from "react";
 import Profile from "./Profile";
 import UserContext from "./UserContext";
 
+
 class UserInfo extends React.Component {
     state = {
-        user:'ramjan'
+        user:{
+            name: 'Ramjan',
+            email:'rharnab@gmail.com'
+        }
     }
 
     render(){

@@ -1,10 +1,11 @@
+import Display from "./Display";
 import UserContext from "./UserContext";
 
 function Content(){
     return(
         <UserContext.Consumer>
             {({user})=> {
-              return <p>{user}</p>
+              return <Display user={user}></Display>
             }}
         </UserContext.Consumer>
     );
