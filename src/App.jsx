@@ -7,25 +7,25 @@ import ThemeContext from './components/contexts/ThemeContext';
 export default class  App extends React.Component {
   state ={
     theme: 'dark',
+    swithTheme: () =>{
+      this.setState(({theme}) =>{
+        if(theme === 'dark'){
+          return {
+            theme:'light'
+          }
+        }else{
+          return {
+            theme: 'dark'
+          }
+        }
+        
+      })
+    }
   }
 
-  swithTheme = () =>{
-    this.setState(({theme}) =>{
-      if(theme === 'dark'){
-        return {
-          theme:'light'
-        }
-      }else{
-        return {
-          theme: 'dark'
-        }
-      }
-      
-    })
-  }
 
   render(){
-    const {theme} = this.state;
+    const {theme, swithTheme} = this.state;
 
      return (
       <div>
@@ -35,7 +35,7 @@ export default class  App extends React.Component {
                 {(counter, incrimentCount)=> <ClickCounter count={counter} incrimentCount={incrimentCount} />}
             </Counter>
 
-          <ThemeContext.Provider value={{theme: theme, swithTheme: this.swithTheme}}> <Section /> </ThemeContext.Provider>   
+          <ThemeContext.Provider value={{theme: theme, swithTheme: swithTheme}}> <Section /> </ThemeContext.Provider>   
         </div>
      );
   }
