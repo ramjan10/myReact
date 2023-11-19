@@ -1,9 +1,7 @@
-import Todo from "./components/Todo";
+import Person from "./components/useState/Person";
 
-function   App (){
-    return(
-      <Todo />
-    );
+function App() {
+  return <Person />;
 }
 
 export default App;
