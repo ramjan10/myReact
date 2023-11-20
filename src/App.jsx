@@ -1,20 +1,11 @@
-import { useState } from "react";
-import MyComponent from "./components/useEffect/MyComponent";
+import Form from "./components/useRef/Form";
+import Time from "./components/useRef/Time";
 
 function App() {
-  const [show, setShow] = useState(true);
-
-  const display = () => {
-    setShow((prevShow) => !prevShow);
-  };
-
   return (
     <div>
-      <div>{show && <MyComponent />}</div>
-
-      <button type="button" onClick={display}>
-        ShowHide
-      </button>
+      <Time />
+      <Form />
     </div>
   );
 }
