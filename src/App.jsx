@@ -1,11 +1,9 @@
-import Form from "./components/useRef/Form";
-import Time from "./components/useRef/Time";
+import CounterThree from "./components/UseReduce/CounterThree";
 
 function App() {
   return (
     <div>
-      <Time />
-      <Form />
+      <CounterThree />
     </div>
   );
 }
