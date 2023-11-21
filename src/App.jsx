@@ -1,11 +1,11 @@
-import GetPost2 from "./components/UseReduce/GetPost2";
+import Show from "./components/Todo/Show";
 
 function App() {
   
 
   return (
     <div className="app">
-        <GetPost2 />
+        <Show />
     </div>
   );
 }
