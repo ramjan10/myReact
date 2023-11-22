@@ -1,11 +1,11 @@
-import Show from "./components/Todo/Show";
+import Todo from "./components/Todo/Todo";
 
 function App() {
   
 
   return (
     <div className="app">
-        <Show />
+        <Todo />
     </div>
   );
 }
