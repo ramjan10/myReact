@@ -1,11 +1,11 @@
-import Todo from "./components/Todo/Todo";
+import LayoutComponentTwo from "./components/customHook/LayoutComponentTwo";
 
 function App() {
   
 
   return (
     <div className="app">
-        <Todo />
+        <LayoutComponentTwo />
     </div>
   );
 }
