@@ -33,10 +33,16 @@ export default function Todo(){
         setList([]);
     }
 
+    const removeItem = (index) =>{
+        const newList = list.filter((_,i)=> i !== index );
+        setList(newList)
+    }
+
+
     
 
     //list data
-    const taskList = list.map((item, index)=> <li key={index}>{item} <button type="button">X</button></li>)
+    const taskList = list.map((item, index)=> <li key={index}>{item} <button type="button" onClick={()=>removeItem(index)} value={index}>X</button></li>)
 
     return (
         <div>
